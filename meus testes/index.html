@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meus testes</title>
+<style>
+  button{
+    padding: 20px 40px;
+  }
+  #choiceblue{
+    background-color: blue;
+  }
+  #choicered{
+    background-color: rgb(177, 13, 13);
+  }
+  #choicegreen{
+    background-color: rgb(0, 255, 115);
+  }
+  .align-buttons{
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="align-buttons">
+  <h3>Escolha um botão</h3>
+  <button id="choiceblue"></button>
+  <button id="choicered"></button>
+  <button id="choicegreen"></button>
+
+  <p id="choice"></p>
+  <script>
+document.getElementById("choiceblue").addEventListener('click', function(){
+  document.getElementById("choice").innerHTML  = "Escolheu azul, trouxa <br><h4>Sua próxima escolha:</h4>" 
+
+;
+});
+document.getElementById("choicered").addEventListener('click', function(){
+  document.getElementById("choice").innerHTML  = "Escolheu vermelho, trouxa";
+});
+document.getElementById("choicegreen").addEventListener('click', function(){
+  document.getElementById("choice").innerHTML  = "Escolheu verde, trouxa";
+});
+
+
+  </script> 
+</div>
+</body>
+</html>
