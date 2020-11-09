@@ -22,7 +22,7 @@ for (var tabuada = 0; tabuada <= 10; tabuada++){
     console.log("4 x " + tabuada + " = " + 4*tabuada)
 }}*/
 
-
+/*
 function tabuada5(){
 for (var tabuada = 0; tabuada <= 10; tabuada++){
     console.log("5 x " + tabuada + " = " + 5*tabuada)
@@ -51,4 +51,23 @@ function tabuada9(){
 for (var tabuada = 0; tabuada <= 10; tabuada++){
     console.log("9 x " + tabuada + " = " + 9*tabuada)
 }}
+*/
 
+
+// Crie uma array com os anos que o Brasil ganhou a copa
+// 1959, 1962, 1970, 1994, 2002
+
+var anos = [1959, 1970, 1994, 2002]
+
+// Interaja com a array utilizando um loop, para mostrar
+// no console a seguinte mensagem, `O brasil ganhou a copa de ${ano}`
+anos.forEach(function(item){
+    console.log('Ganhou em ' + item);
+})
+
+// Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
+var frutas = ['Banana', 'Maçã', 'Pera', 'Uva', 'Melância']
+
+for( var i = 0; frutas.length; i++){
+  /*  console.log(frutas[i])
+}
