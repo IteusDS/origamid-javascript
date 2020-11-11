@@ -70,4 +70,3 @@ var frutas = ['Banana', 'Maçã', 'Pera', 'Uva', 'Melância']
 
 for( var i = 0; frutas.length; i++){
   /*  console.log(frutas[i])
-}
