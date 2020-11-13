@@ -13,10 +13,10 @@ var possuiCarro = true;
 var possuiCasa = true;
 
 
+
+
 var darCredito ;
 darCredito = (possuiCasa && possuiCarro) ? true : false;
 console.log(darCredito)
-
-
 
 // condição ? true : false
