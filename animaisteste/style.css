@@ -1,0 +1,70 @@
+body, h1, h2, dt, dd, dl, ul, li, img{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+ul, li{
+    list-style: none;
+  
+}
+
+body {
+    background-color: #faf6ed;
+    color: #222;
+    -webkit-font-smoothing: antialised;
+    display: grid;
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu{
+    grid-column: 3 / 5;
+    /* Significa que pega da 3° até a 5° coluna*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #fb5;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* Mesmo usando grid, o flex deixa a lista um do lado do outro*/
+}
+.menu ul li a{
+    display: block;
+    padding: 10px;
+
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.grid-section{
+    grid-column: 2/4;
+    width: 100%;
+    box-sizing: border-box;
+padding: 10px;
+display: grid;
+grid-template-columns: 100px 300px 1fr;
+grid-gap:20px;
+/*distância entre as grids*/
+margin-bottom: 4rem;
+}
+
+.titulo {
+    font-family: 'Playfair Display SC', georgia;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
+}
